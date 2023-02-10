@@ -1,51 +1,43 @@
 input.onButtonPressed(Button.A, function () {
-    if (true) {
-        led.plotBrightness(0, 0, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(0, 2, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(0, 4, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(2, 0, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(2, 2, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(2, 4, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(4, 0, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(4, 2, 150)
-        if (false) {
-            led.unplot(0, 0)
-        }
-    } else if (true) {
-        led.plotBrightness(4, 4, 150)
-        if (false) {
-            led.unplot(0, 0)
+    Compter += 1
+    if (Compter == 1) {
+        led.plotBrightness(0, 0, 100)
+    } else {
+        if (Compter == 2) {
+            led.plotBrightness(2, 0, 100)
+        } else {
+            if (Compter == 3) {
+                led.plotBrightness(4, 0, 100)
+            } else {
+                if (Compter == 4) {
+                    led.plotBrightness(0, 2, 100)
+                } else {
+                    if (Compter == 5) {
+                        led.plotBrightness(2, 2, 100)
+                    } else {
+                        if (Compter == 6) {
+                            led.plotBrightness(4, 2, 100)
+                        } else {
+                            if (Compter == 7) {
+                                led.plotBrightness(0, 4, 100)
+                            } else {
+                                if (Compter == 8) {
+                                    led.plotBrightness(2, 4, 100)
+                                } else {
+                                    if (Compter == 9) {
+                                        led.plotBrightness(4, 4, 100)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 })
+let Compter = 0
+Compter = 0
 basic.forever(function () {
     led.plotBrightness(1, 0, 255)
     led.plotBrightness(1, 1, 255)
